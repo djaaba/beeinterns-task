@@ -1,6 +1,5 @@
 import './styles/index.scss';
 import $ from 'jquery';
 
-$('.block').html('jQuery is good');
+// $('.block').html('jQuery is working');
 
-console.log(2);

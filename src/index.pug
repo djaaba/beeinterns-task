@@ -3,10 +3,77 @@ include pug/libs/_libs
 doctype html
 html(lang = 'en')
   include pug/_head
-  body 
-    .container
-      h1 HI!
-    +image('penguin', 'jpg')
-    +image('PNG', 'png')
+  body
+    .main
+      section.menu
+        .menu__wrapper
+          .menu__logo
+            img(src=require("./images/logo.png"))
+      section.content-header.padding
+        .content-header__wrapper
+          .content-header__settings
+            p.content-header__setting FAQ
+            p.content-header__setting Поддержка
+            p.content-header__setting Настройки
+            .content-header__line
+          .content-header__wrapper-container
+            .content-header__profile
+              .content-header__info 15 готовых дз
+              .content-header__info 18 лекций
+              .content-header__info-energy
+                .content-header__energy-square
+                  img.content-header__energy-img(src=require("./images/svg/energy.svg"))
+                p.content-header__energy-text <strong>1200</strong> <span>часов</span>
+            .content-header__account
+              img.content-header__account-img(src=require("./images/avatar.jpg") alt=photo)
+              .content-header__container 
+                .content-header__account-info
+                  p.content-header__account-name Вася Пупкин
+                  .content-header__account-status
+                    .content-header__status-circle
+                    p.content-header__web-status Online
+                p.content-header__account-pro pro
+    //- .menu__nav
+    //-   .accordion-wrapper
+    //-     .accordion
+    //-       input#check1(type='radio' name='radio-a' checked='')
+    //-       label.accordion-label(for='check1') Программа
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/sword.svg"))
+    //-         p HTML/CSS
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/rocket.svg"))
+    //-         p GIT
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/puzzle.svg"))
+    //-         p JavaScript
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/cheese.svg"))
+    //-         p React
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/cube.svg"))
+    //-         p Angular
+    //-       .accordion-content
+    //-         img(src=require("./images/svg/ball.svg"))
+    //-         p Data
+    //-     .accordion
+    //-       input#check2(type='radio' name='radio-a')
+    //-       label.accordion-label(for='check2') Лекции
+    //-       .accordion-content
+    //-         p 2
+    //-     .accordion
+    //-       input#check3(type='radio' name='radio-a')
+    //-       label.accordion-label(for='check3') 3
+    //-       .accordion-content
+    //-         p 3
+        //- .menu__line
+        //- .menu__wrapper
+        //-   .menu_ad-block
+        //-     p.menu_ad-text Получать рассылку
+        //-     p.menu_ad-toggler 
+        //-       .toggle-wrapper
+        //-         .toggle.transparent
+        //-           input#transparent(type="checkbox")
+        //-           label.toggle-item(for="transparent")
     .block()
 

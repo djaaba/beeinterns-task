@@ -1,13 +1,205 @@
-$primaryColor: darkcyan;
-$secondaryColor: pink;
+$primaryColor: #2B2C3A;
+$btnColor: #6B69F9;
+$titleColor: #FFFFFF;
+$subtitleColor: #ffffff50;
+$cartColor: rgba(255, 255, 255, 0.06);
+$borderColor: #D8D8D8;
+$energyColor: #FF4738;
+$green: #24CB8D;
 
-html{
-    font-family: Montserrat;
+body{
     display: flex;
-    justify-content: center;
+    height: 1500px;
+    font-family: Jost;
 }
+.content-main{
+    
+}
+.main {
+    position: fixed;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    // padding-left: 30px;
+    padding-right: 45px;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    background-color: $primaryColor;
+}
+.menu{
+    background-color: green;
+    // position: fixed;
+    width: 280px;
+    text-transform: uppercase;
+    &__wrapper{
+        max-width: 220px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+    }
+    &__logo{
 
-h1{
-    color: $secondaryColor;
-    background: url("../images/PNG.png");
+    }
+    &__line{
+
+    }
+    &__nav{
+
+    }
+}
+.content-header {
+    display: flex;
+    // margin: 0 auto;
+    // width: 1440px;
+    width: 1060px;
+    justify-content: space-between;
+    
+    &__wrapper {
+        // margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        // padding-top: 14px;
+    }
+
+    &__settings {
+        display: flex;
+        width: 244px;
+        justify-content: space-between;
+        align-items: center;
+        height: 24px;
+        font-size: 14px;
+        // margin-left: 55px;
+    }
+
+    &__setting {
+        color: $borderColor;
+    }
+
+    &__wrapper-container {
+        width: 504px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__line {
+        border-left: 1px solid $cartColor;
+        height: 100%;
+        margin-left: 3px;
+    }
+
+    &__profile {
+        display: flex;
+        width: 298px;
+        justify-content: space-between;
+        align-items: center;
+        color: $titleColor;
+        font-size: 13px;
+    }
+
+    &__info {
+        background-color: $cartColor;
+        border-radius: 5px;
+        padding: 7px 9px;
+    }
+
+    &__info-energy {
+        display: flex;
+        align-items: center;
+
+        background-color: $cartColor;
+        border-radius: 5px;
+        padding: 4.5px 9px 4.5px 4.5px;
+    }
+
+    &__energy-square {
+        background-color: $energyColor;
+        border-radius: 4px;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 12px 0px rgba(255, 71, 56, 0.5);
+    }
+
+    &__energy-img {}
+
+    &__energy-text {
+        margin-left: 10px;
+
+        strong {
+            font-style: bold;
+        }
+
+        span {
+            font-size: 11px;
+            color: $borderColor;
+        }
+    }
+
+    &__account {
+        display: flex;
+        justify-content: space-between;
+        color: $titleColor;
+        width: 190px;
+    }
+
+    &__account-img {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__container {
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 133px;
+    }
+
+    &__account-info {}
+
+    &__account-name {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__account-status {
+        display: flex;
+        align-items: center;
+    }
+
+    &__status-circle {
+        background: $green;
+        border-radius: 50%;
+        height: 6px;
+        width: 5px;
+        margin: 0 5px;
+    }
+
+    &__web-status {
+        color: $green;
+        font-size: 13px;
+    }
+
+    &__account-pro {
+        padding: 2px 11px 2px 8px;
+        background-color: $btnColor;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 11px;
+        align-self: flex-start;
+    }
+}
+.padding {
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
