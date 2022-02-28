@@ -11,18 +11,29 @@ body {
     height: 1500px;
     font-family: Jost;
     padding: 0;
+    color: white;
+    background-color: $primaryColor;
 }
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    display: flex;
+}
+
 .menu {
-    background-color: green;
+    background: rgba(156, 165, 236, 0.04);
+
     width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    background-color: green;
     position: fixed;
+
     &__header {
-        background-color: darkgray;
+
         height: 72px;
         display: flex;
         align-items: center;
@@ -35,12 +46,11 @@ body {
     }
 
     &__select {
-        padding-top: 30px; /////////
-        // padding-left: 30px;
+        padding-top: 30px; ////
         font-size: 14px;
-        color: white;
         border-bottom: 1px solid #000;
     }
+
     &__wrapper {
         max-width: 220px;
         margin: 0 auto;
@@ -53,8 +63,18 @@ body {
     &__line {}
 
     &__nav {}
-}
 
+    &__ad-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &_padding-l-r {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 .arrow-container {
     display: flex;
@@ -68,6 +88,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     &__ul {
         margin-top: 5px;
         padding-bottom: 25px;
@@ -78,8 +99,9 @@ body {
         height: 40px;
         padding: 11px 0px 11px 50px;
         border-left: 3px solid transparent;
-        
+
         cursor: pointer;
+
         &:hover {
             background-color: rgba(111, 110, 255, 0.06);
             border-left: 3px solid #6F6EFF;
@@ -87,6 +109,10 @@ body {
             .img-svg path,
             .img-svg {
                 fill: #6F6EFF;
+                opacity: 1;
+            }
+
+            .accordion__subtitle {
                 opacity: 1;
             }
         }
@@ -101,13 +127,14 @@ body {
         fill: black;
         opacity: 1;
     }
+
     .closed,
     .open {
         width: 100%;
         margin-bottom: 10px;
     }
+
     &__subtitle {
-        line-height: 10px;
         display: flex;
         align-items: center;
     }
@@ -118,34 +145,23 @@ body {
     }
 }
 
-
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-}
-
-.cart {
-    padding-top: 100px;
-    padding-left: 280px;
-}
-.header__right-padding {
-    padding-top: 14px;
-    padding-bottom: 13px;
-}
-.header__right {
-    position: fixed;
-    margin-left: 280px;
-    background-color: darkgreen;
-}
 .content-header {
     display: flex;
     justify-content: space-between;
 
+    &_padding {
+        position: fixed;
+        margin-left: 280px;
+        // background-color: $primaryColor;
+
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
+
     &__wrapper {
         padding-left: 55px;
-        width: 1115px;
-        // width: 100%;
+        padding-right: 45px;
+        width: 1160px;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -161,9 +177,7 @@ body {
         font-size: 14px;
     }
 
-    &__setting {
-        color: $borderColor;
-    }
+    &__setting {}
 
     &__wrapper-container {
         width: 504px;
@@ -281,5 +295,67 @@ body {
         text-transform: uppercase;
         font-size: 11px;
         align-self: flex-start;
+    }
+}
+
+.font14-opacity05 {
+    line-height: 10px;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.course {
+    margin-top: 112px;
+    margin-left: 335px;
+
+    // width: 1052px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lectures {
+        display: flex;
+    }
+    
+    &__li {}
+    &__info{
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &__level{
+        margin-bottom: 7px;
+        font-size: 11px;
+        line-height: 16px;
+        opacity: 0.5;
+    }
+    &__discipline{
+        font-size: 22px;
+        line-height: 18px;
+    }
+}
+
+.slick {
+    max-width: 1052px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    &-slide {
+        padding: 0 3px;
+    }
+    
+    &-list {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    
+    &-item {
+        border: 1px solid black;
+        height: 294px;
+        width: 255px !important;
+        display: flex;
+        font-display: column;
+        justify-content: space-around;
     }
 }

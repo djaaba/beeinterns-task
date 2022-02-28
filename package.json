@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "accordion": "^3.0.2",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }

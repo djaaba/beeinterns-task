@@ -2,12 +2,15 @@ import './styles/index.scss';
 import $ from 'jquery';
 import 'accordion/src/accordion.js'
 import 'accordion/src/accordion.css'
+// import 'slick-carousel';
+import 'slick-carousel/slick/slick.js';
+import 'slick-carousel/slick/slick.css';
 
-// $('.block').html('jQuery is working');
-
+// accordion menu
 var el = document.querySelector(".accordion");
 new Accordion(el);
 
+// we need to paint ours svg to else colors
 $('img.img-svg').each(function () {
     var $img = $(this);
     var imgClass = $img.attr('class');
@@ -24,3 +27,9 @@ $('img.img-svg').each(function () {
         $img.replaceWith($svg);
     }, 'xml');
 });
+
+$('.slick').slick({
+    slidesToShow: 4,
+    arrows: false,
+    infinite: true
+  });

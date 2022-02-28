@@ -7,67 +7,66 @@ html(lang = 'en')
     .wrapper
       section.menu
         .menu__container
-          .menu__header
+          .menu__header.menu_padding-l-r
             img.menu__img(src=require("./images/logo.png"))
           .menu__select
             ul.accordion
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Программа 
                   .arrow.arrow-top
                 div content
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Менторы 
                 div 
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Лекции 
                   .arrow.arrow-top
                 ul.accordion__ul
                   li.accordion__li
                     img.accordion__img.img-svg(src=require("./images/svg/sword.svg"))
-                    p.accordion__subtitle HTML/CSS 
+                    p.accordion__subtitle.font14-opacity05 HTML/CSS 
                   li.accordion__li
                     img.accordion__img.img-svg(src=require("./images/svg/rocket.svg"))
-                    p.accordion__subtitle GIT
+                    p.accordion__subtitle.font14-opacity05 GIT
                   li.accordion__li
                     img.accordion__img.img-svg(src=require("./images/svg/puzzle.svg"))
-                    p.accordion__subtitle JavaScript
+                    p.accordion__subtitle.font14-opacity05 JavaScript
                   li.accordion__li
-                    img.accordion__img.img-svg(src=require("./images/svg/cheese.svg"))
-                    p.accordion__subtitle React
+                    img.accordion__img.img-svg(src=require("./images/svg/checker.svg"))
+                    p.accordion__subtitle.font14-opacity05 React
                   li.accordion__li
                     img.accordion__img.img-svg(src=require("./images/svg/cube.svg"))
-                    p.accordion__subtitle Angular
+                    p.accordion__subtitle.font14-opacity05 Angular
                   li.accordion__li
                     img.accordion__img.img-svg(src=require("./images/svg/ball.svg"))
-                    p.accordion__subtitle Data
+                    p.accordion__subtitle.font14-opacity05 Data
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Правила поступления 
                 div 
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Новости
                 div 
               li.accordion__el
-                .arrow-container
+                .arrow-container.menu_padding-l-r
                   p.accordion__title Обратная связь
                 div 
-        .menu_ad-block
+        .menu__ad-block.menu_padding-l-r
             p.menu_ad-text Получать рассылку
-            p.menu_ad-toggler 
+            .menu_ad-toggler 
               .toggle-wrapper
                 .toggle.transparent
                   input#transparent(type="checkbox")
                   label.toggle-item(for="transparent")
-      section.header__right
-        .content-header__wrapper.header__right-padding
+        .content-header__wrapper.content-header_padding
           .content-header__settings
-            p.content-header__setting FAQ
-            p.content-header__setting Поддержка
-            p.content-header__setting Настройки
+            p.content-header__setting.font14-opacity05 FAQ
+            p.content-header__setting.font14-opacity05 Поддержка
+            p.content-header__setting.font14-opacity05 Настройки
             .content-header__line
           .content-header__wrapper-container
             .content-header__profile
@@ -86,10 +85,63 @@ html(lang = 'en')
                     .content-header__status-circle
                     p.content-header__web-status Online
                 p.content-header__account-pro pro
-      section.content1
-        p.cart cart
-        //- .menu__line
-        //- .menu__wrapper
-        
+      section.course
+        ul.course__ul
+          li.course__li
+            .course__header
+              .course__info
+                p.course__level Базовый уровень
+                h1.course__discipline html/css
+              .course__lectures
+                button.course__button
+                .course__arrows
+                  button.course__arrow_l
+                  button.course__arrow_r
+            div.slick
+              div.slick-item 
+                img(src=require("./images/img0.jpg"))
+                .slider__container
+                  .slider__wrapper
+                    p.slider__title Структура HTML
+                    p.slider__subtitle Назначение блоков head, body
+                .slider__footer
+                  p.slider__date 01.02.2022
+                  button.slider__button Смотреть
+              div.slick-item 
+                img(src=require("./images/img1.jpg"))
+                .slider__container
+                  .slider__wrapper
+                    p.slider__title Подключение стилей
+                    p.slider__subtitle Виды  подключения стилей, подключение шрифтов
+                .slider__footer
+                  p.slider__date 03.02.2022
+                  button.slider__button Смотреть
+              div.slick-item 
+                img(src=require("./images/img2.jpg"))
+                .slider__container
+                  .slider__wrapper
+                    p.slider__title CSS
+                    p.slider__subtitle Базовый синтаксис CSS: селекторы, классы
+                .slider__footer
+                  p.slider__date 08.02.2022
+                  button.slider__button Смотреть
+              div.slick-item 
+                img(src=require("./images/img3.jpg"))
+                .slider__container
+                  .slider__wrapper
+                    p.slider__title Наследие и каскад
+                    p.slider__subtitle Наследие и каскад
+                .slider__footer
+                  p.slider__date 10.02.2022
+                  button.slider__button Смотреть
+              div.slick-item 
+                img(src=require("./images/img3.jpg"))
+                .slider__container
+                  .slider__wrapper
+                    p.slider__title Наследие и каскад
+                    p.slider__subtitle Наследие и каскад
+                .slider__footer
+                  p.slider__date 10.02.2022
+                  button.slider__button Смотреть
     .block()
 
