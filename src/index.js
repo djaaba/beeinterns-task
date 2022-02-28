@@ -28,8 +28,16 @@ $('img.img-svg').each(function () {
     }, 'xml');
 });
 
-$('.slick').slick({
+$('#slick-1').slick({
     slidesToShow: 4,
-    arrows: false,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
     infinite: true
-  });
+});
+
+$('#slick-2').slick({
+    slidesToShow: 4,
+    prevArrow: $('.slick-prev2'),
+    nextArrow: $('.slick-next2'),
+    infinite: true
+});

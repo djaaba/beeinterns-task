@@ -64,9 +64,9 @@ html(lang = 'en')
                   label.toggle-item(for="transparent")
         .content-header__wrapper.content-header_padding
           .content-header__settings
-            p.content-header__setting.font14-opacity05 FAQ
-            p.content-header__setting.font14-opacity05 Поддержка
-            p.content-header__setting.font14-opacity05 Настройки
+            a.content-header__setting.font14-opacity05 FAQ
+            a.content-header__setting.font14-opacity05 Поддержка
+            a.content-header__setting.font14-opacity05 Настройки
             .content-header__line
           .content-header__wrapper-container
             .content-header__profile
@@ -93,55 +93,145 @@ html(lang = 'en')
                 p.course__level Базовый уровень
                 h1.course__discipline html/css
               .course__lectures
-                button.course__button
+                button.course__button.slick__button.slick_button-text-style Все лекции
                 .course__arrows
-                  button.course__arrow_l
-                  button.course__arrow_r
-            div.slick
+                  a.course__arrow
+                    .slick-prev.arrow.arrow-left
+                  a.course__arrow
+                    .slick-next.arrow.arrow-right
+            div.slick(id='slick-1')
               div.slick-item 
-                img(src=require("./images/img0.jpg"))
-                .slider__container
-                  .slider__wrapper
-                    p.slider__title Структура HTML
-                    p.slider__subtitle Назначение блоков head, body
-                .slider__footer
-                  p.slider__date 01.02.2022
-                  button.slider__button Смотреть
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img0.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Структура HTML
+                      p.slick__subtitle.font14-opacity05 Назначение блоков head, body
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 01.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
               div.slick-item 
-                img(src=require("./images/img1.jpg"))
-                .slider__container
-                  .slider__wrapper
-                    p.slider__title Подключение стилей
-                    p.slider__subtitle Виды  подключения стилей, подключение шрифтов
-                .slider__footer
-                  p.slider__date 03.02.2022
-                  button.slider__button Смотреть
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img1.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Подключение стилей
+                      p.slick__subtitle.font14-opacity05 Виды  подключения стилей. Подключение шрифтов
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 03.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
               div.slick-item 
-                img(src=require("./images/img2.jpg"))
-                .slider__container
-                  .slider__wrapper
-                    p.slider__title CSS
-                    p.slider__subtitle Базовый синтаксис CSS: селекторы, классы
-                .slider__footer
-                  p.slider__date 08.02.2022
-                  button.slider__button Смотреть
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img2.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title CSS
+                      p.slick__subtitle.font14-opacity05 Базовый синтаксис CSS: селекторы, классы
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 08.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
               div.slick-item 
-                img(src=require("./images/img3.jpg"))
-                .slider__container
-                  .slider__wrapper
-                    p.slider__title Наследие и каскад
-                    p.slider__subtitle Наследие и каскад
-                .slider__footer
-                  p.slider__date 10.02.2022
-                  button.slider__button Смотреть
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img3.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Наследие и каскад
+                      p.slick__subtitle.font14-opacity05 Наследие и каскад
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 10.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
               div.slick-item 
-                img(src=require("./images/img3.jpg"))
-                .slider__container
-                  .slider__wrapper
-                    p.slider__title Наследие и каскад
-                    p.slider__subtitle Наследие и каскад
-                .slider__footer
-                  p.slider__date 10.02.2022
-                  button.slider__button Смотреть
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img0.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Наследие и каскад
+                      p.slick__subtitle.font14-opacity05 Наследие и каскад
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 10.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
+          li.course__li
+            .course__header
+              .course__info
+                p.course__level Базовый уровень
+                h1.course__discipline html/css
+              .course__lectures
+                button.course__button.slick__button.slick_button-text-style Все лекции
+                .course__arrows
+                  a.course__arrow
+                    .slick-prev2.arrow.arrow-left
+                  a.course__arrow
+                    .slick-next2.arrow.arrow-right
+            div.slick(id='slick-2')
+              div.slick-item 
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img0.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Структура HTML
+                      p.slick__subtitle.font14-opacity05 Назначение блоков head, body
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 01.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
+              div.slick-item 
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img1.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Подключение стилей
+                      p.slick__subtitle.font14-opacity05 Виды  подключения стилей. Подключение шрифтов
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 03.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
+              div.slick-item 
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img2.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title CSS
+                      p.slick__subtitle.font14-opacity05 Базовый синтаксис CSS: селекторы, классы
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 08.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
+              div.slick-item 
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img3.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Наследие и каскад
+                      p.slick__subtitle.font14-opacity05 Наследие и каскад
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 10.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
+              div.slick-item 
+                .slick__block
+                  .slick__img
+                    img(src=require("./images/img0.jpg"))
+                    button.slick__button.slick_button-lecture-padding.slick_button-pos.slick_button-text-style Лекция
+                  .slick__container
+                    .slick__wrapper.slick_padding-text
+                      p.slick__title Наследие и каскад
+                      p.slick__subtitle.font14-opacity05 Наследие и каскад
+                    .slick__footer.slick_padding-text.slick_button-text-style
+                      p.slick__date 10.02.2022
+                      button.slick__button.slick_button-watch-padding Смотреть
     .block()
 
