@@ -18,7 +18,7 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    // background: rgba(255, 255, 255, 0.01);
     display: flex;
 }
 
@@ -162,7 +162,7 @@ body {
         display: flex;
         align-items: center;
         border-bottom: 1px solid $borderColor;
-        z-index: 10000;
+        background: $primaryColor;
     }
 
     &__settings {
@@ -306,8 +306,12 @@ body {
 .course {
     margin-top: 112px;
     margin-left: 335px;
-    &__ul{
+
+    &__ul {
+        position: relative;
+        z-index: -1;
     }
+
     &__header {
         display: flex;
         justify-content: space-between;
@@ -368,7 +372,6 @@ body {
 
         .arrow {
             margin: 10px 10px;
-            // margin: 10px;
         }
     }
 }
@@ -396,8 +399,10 @@ body {
     &__img {
         position: relative;
         text-align: center;
+        z-index: -1;
 
         img {
+            z-index: -1;
             width: 100%;
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
